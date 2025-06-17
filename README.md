@@ -33,8 +33,8 @@ slatonforged.dev/
 │   └── normalize.css
 ├── scripts/
 │   └── embers.js
-├── images/
-│   └── (anvil, background, icons, etc.)
+└── images/
+    └── (anvil, background, icons, etc.)
 
 ```
 
