@@ -35,8 +35,7 @@ slatonforged.dev/
 │   └── embers.js
 ├── images/
 │   └── (anvil, background, icons, etc.)
-└── fonts/
-    └── (custom fonts if self-hosted)
+
 ```
 
 ## 📌 Todo / Wishlist
