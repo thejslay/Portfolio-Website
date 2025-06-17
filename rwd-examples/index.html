@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slaton Forged | Developer Portfolio</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="icon" type="image/png" href="../images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
+  <link rel="shortcut icon" href="../images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Slatonforged.dev" />
+  <link rel="manifest" href="../images/site.webmanifest" />
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Embers container -->
+  <div class="embers-container" id="embers-container"></div>
+
+  <!-- Main content -->
+  <div class="container">
+    <img src="images/anvil2_transparent.png" alt="Glowing Anvil Logo" class="glow-anvil">
+    <p> </p>
+    <br>
+    <nav>
+      <ul>
+        <li><a href="https://slatonforged.dev/">Return Home</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <h1>Welcome To The Forge</h1>
+      <p>This is my RWD-Examples subdomain page!</p>
+      <p><a href="SlatonJeremiahCh8/">View Chapter 8 Lab</a></p>
+      <p><a href="SlatonJeremiahCh9/">View Chapter 9 Lab</a></p>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    const embersContainer = document.getElementById('embers-container');
+    const emberCount = 60;
+    const sizes = ['small', 'medium', 'large'];
+    const colors = ['yellow', 'orange', 'red'];
+
+    for (let i = 0; i < emberCount; i++) {
+      createEmber();
+    }
+
+    function createEmber() {
+      const ember = document.createElement('div');
+      ember.classList.add('ember');
+
+      const size = sizes[Math.floor(Math.random() * sizes.length)];
+      const color = colors[Math.floor(Math.random() * colors.length)];
+      ember.classList.add(size, color);
+
+      const position = Math.random() * 100;
+      const duration = 3 + Math.random() * 5;
+      const drift = -30 + Math.random() * 60;
+
+      ember.style.setProperty('--position', `${position}%`);
+      ember.style.setProperty('--duration', `${duration}s`);
+      ember.style.setProperty('--drift', `${drift}px`);
+
+      embersContainer.appendChild(ember);
+
+      setTimeout(() => {
+        ember.remove();
+        createEmber();
+      }, duration * 1000);
+    }
+  </script>
+</body>
+</html>

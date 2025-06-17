@@ -1,0 +1,191 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #000 !important;
+}
+
+/* Global body text font */
+body, p, a, li, span, div {
+  font-family: 'Cardo', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* Headings - fantasy styled */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IM Fell English SC', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #f0c060;
+}
+
+/* Optional hover or visual style */
+h1:hover, h2:hover {
+  color: #ff9900;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Container for the whole page */
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Embers container */
+.embers-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Individual ember */
+.ember {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #ff7700;
+  box-shadow: 0 0 6px 2px rgba(255, 119, 0, 0.8);
+  opacity: 0;
+  animation: float-up var(--duration, 7s) ease-in-out infinite;
+  bottom: -10px;
+  left: var(--position, 50%);
+}
+
+/* Ember variants */
+.ember.small {
+  width: 2px;
+  height: 2px;
+  box-shadow: 0 0 4px 1px rgba(255, 119, 0, 0.7);
+}
+
+.ember.medium {
+  width: 4px;
+  height: 4px;
+  box-shadow: 0 0 8px 2px rgba(255, 119, 0, 0.8);
+}
+
+.ember.large {
+  width: 6px;
+  height: 6px;
+  box-shadow: 0 0 12px 3px rgba(255, 119, 0, 0.9);
+}
+
+.ember.yellow {
+  background-color: #ffcc00;
+  box-shadow: 0 0 6px 2px rgba(255, 204, 0, 0.8);
+}
+
+.ember.orange {
+  background-color: #ff7700;
+  box-shadow: 0 0 6px 2px rgba(255, 119, 0, 0.8);
+}
+
+.ember.red {
+  background-color: #ff3300;
+  box-shadow: 0 0 6px 2px rgba(255, 51, 0, 0.8);
+}
+
+/* Navigation */
+nav {
+  margin-bottom: 40px;
+  z-index: 3;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+  text-shadow: 0 0 5px rgba(255, 119, 0, 0.5);
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 119, 0, 0.2);
+  text-shadow: 0 0 10px rgba(255, 119, 0, 0.8);
+}
+
+/* Content */
+.content {
+  text-align: center;
+  max-width: 600px;
+  z-index: 3;
+  background-size: 600px 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  color: rgb(255, 255, 255); /* or a color that contrasts well */
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px rgba(255, 119, 0, 0.5);
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Ember animation */
+@keyframes float-up {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(var(--drift, 20px));
+    opacity: 0;
+  }
+}
+
+/* Anvil glow animation */
+.glow-anvil {
+  width: 300px;
+  height: auto;
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+      filter: drop-shadow(0 0 4px #ff6600) drop-shadow(0 0 10px #ff6600);
+  }
+  50% {
+      filter: drop-shadow(0 0 10px #ff9900) drop-shadow(0 0 20px #ff3300);
+  }
+}

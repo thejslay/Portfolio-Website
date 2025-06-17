@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biergarten Delight</title>
+    <link rel="stylesheet" href="pages\styles\main.css">
+</head>
+<body bgcolor="tan">
+
+    <!-- Header Section -->
+    <header>
+        <img id="header-img" src="https://www.shutterstock.com/image-vector/national-day-deutschland-germany-banner-260nw-2030291225.jpg" alt="Biergarten Delight restaurant">
+        <h1>Biergarten Delight</h1>
+        <nav>
+            <h2><a href="#menu">Menu</a></h2>
+            <h2><a href="#order-form">Place Your Order</a></h2>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Menu Section -->
+        <section id="menu">
+            <h2>Menu</h2>
+            <article>
+                <img src="https://www.allrecipes.com/thmb/qvxySpr02WbpqmlXORC_ex1wRys=/750x0/filters:no_upscale():max_bytes(150000):strip_icc()/221361-traditional-sauerbraten-beauty-4x3-BP-2925-a1b153f8bdfd4e4b840d5c802d3e16a3.jpg" alt="Sauerbraten" width="200">
+                <h3>Sauerbraten</h3>
+                <p>A traditional German pot roast made with marinated beef. Served with red cabbage and dumplings. <em>$18.99</em></p>
+            </article>
+            <article>
+                <img src="https://www.mywanderlustylife.com/wp-content/uploads/2020/05/oktoberfest-pretzels-recipe-FEATURED-scaled-e1589383578558.jpg" alt="Pretzel" width="200">
+                <h3>Giant Pretzel</h3>
+                <p>Freshly baked pretzel, crispy on the outside and soft inside. Great as a snack or appetizer. <em>$5.99</em></p>
+            </article>
+            <article>
+                <img src="https://d2lswn7b0fl4u2.cloudfront.net/photos/pg-bratwurst-1632752120.jpg" alt="Bratwurst" width="200">
+                <h3>Bratwurst</h3>
+                <p>Grilled German sausage served with mustard and sauerkraut. A classic dish! <em>$12.49</em></p>
+            </article>
+        </section>
+
+        <!-- Order Form Section -->
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Select Your Items</legend>
+
+                    <label for="sauerbraten">Sauerbraten:</label>
+                    <input type="number" id="sauerbraten" name="sauerbraten" min="0" value="0" required>
+                    <br>
+
+                    <label for="pretzel">Giant Pretzel:</label>
+                    <input type="number" id="pretzel" name="pretzel" min="0" value="0" required>
+                    <br>
+
+                    <label for="bratwurst">Bratwurst:</label>
+                    <input type="number" id="bratwurst" name="bratwurst" min="0" value="0" required>
+                    <br><br>
+
+                    <fieldset>
+                        <legend>Choose Sides and Add-Ons</legend>
+
+                        <label for="sauerkraut">Sauerkraut:</label>
+                        <input type="checkbox" id="sauerkraut" name="sauerkraut">
+                        <br>
+
+                        <label for="potato-salad">Kartoffelsalat (Potato Salad):</label>
+                        <input type="checkbox" id="potato-salad" name="potato-salad">
+                        <br>
+
+                        <label for="beer">Bier (German Lager):</label>
+                        <input type="radio" id="beer" name="drink" value="beer">
+                        <label for="beer">Ja, bitte! (Yes, please!)</label>
+                        <br>
+
+                        <label for="no-beer">No beer:</label>
+                        <input type="radio" id="no-beer" name="drink" value="no-beer" checked>
+                        <br><br>
+                    </fieldset>
+
+                    <label for="special-request">Special Requests:</label>
+                    <textarea id="special-request" name="special-request" rows="4" cols="50" placeholder="Add any special instructions or requests here"></textarea>
+                    <br><br>
+
+                    <input type="submit" value="Go To Checkout">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Made with love by Jeremiah</p>
+    </footer>
+
+</body>
+</html>
