@@ -62,10 +62,10 @@ This site is hosted using [GitHub Pages](https://pages.github.com/). To deploy:
 
 ## 📌 Todo / Wishlist
 
-- [ ] Add blog or devlog section
+- [x] Add blog or devlog section
 - [x] Integrate contact form backend (e.g., Netlify Forms or PHP mailer)
 - [x] Improve mobile performance and accessibility
-- [ ] Add LinkedIn and GitHub icon links
+- [x] Add LinkedIn and GitHub icon links
 - [ ] Expand project pages with languages and descriptions
 =======
 ```
