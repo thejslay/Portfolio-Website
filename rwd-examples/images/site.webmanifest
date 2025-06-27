@@ -1,6 +1,6 @@
 {
-  "name": "SlatonForged",
-  "short_name": "SlatonForged",
+  "name": "Slatonforged.dev",
+  "short_name": "Slatonforged",
   "icons": [
     {
       "src": "/images/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#fd742b",
-  "background_color": "#fd742b",
+  "theme_color": "#040200",
+  "background_color": "#040200",
   "display": "standalone"
 }

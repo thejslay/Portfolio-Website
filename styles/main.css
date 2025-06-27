@@ -6,7 +6,7 @@
 }
 
 /* ===== GLOBAL TYPOGRAPHY ===== */
-body, p, a, li, span, div {
+body, p, a, li, span, div, form {
   font-family: 'Cardo', serif;
   font-size: 1rem;
   line-height: 1.6;
@@ -18,23 +18,19 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'IM Fell English SC', serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: #f0c060;
+  color: #f0c060 !important;
 }
 
-h1:hover, h2:hover {
-  color: #ff9900;
-  transition: color 0.3s ease-in-out;
+h1 {
+  color: #f0c060 !important;
+  font-size: 2rem !important;
 }
 
 h1, h2 {
   text-shadow: 1px 1px 4px rgba(255, 204, 0, 0.5);
 }
 
-h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-  text-shadow: 0 0 15px rgba(255, 119, 0, 0.5);
-}
+
 
 /* ===== BODY & HTML BASE ===== */
 html, body {
@@ -275,7 +271,7 @@ p {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  font-family: 'Cinzel', serif;
+  font-family: 'Cardo', serif;
   box-shadow: 0 0 10px rgba(255, 140, 0, 0.2);
   transition: transform 0.2s;
 }
@@ -326,11 +322,11 @@ p {
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s ease;
-  font-family: 'Cinzel', serif;
+  font-family: 'Cardo', serif;
 }
 
 .contact-form button:hover {
-  background-color: #ff3300;
+  background-color: #cc5200;
 }
 
 /* ===== DOWNLOAD BUTTON ===== */
@@ -578,3 +574,4 @@ p {
         max-width: 250px; 
     } 
 }
+

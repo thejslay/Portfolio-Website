@@ -11,9 +11,10 @@ const albumArt = document.getElementById('albumArt');
 const playlist = document.getElementById('playlist');
 
 const tracks = [
-    { title: 'Far from Heaven', src: '../assets/Fit For An Autopsy - Far From Heaven.mp3', art: '../assets/FFAA.jpg' },
-    { title: 'No Place Like Home', src: '../assets/Valiant Hearts - No Place Like Home.mp3', art: '../assets/valiant.jpg' },
-    { title: 'Thine King Weeps For Mercy', src: '../assets/Netherwalker - Thine King Weeps for Mercy.mp3', art: '../assets/netherwalker.jpg' },
+    { title: 'Fit For An Autopsy - Far from Heaven', src: '../assets/Fit For An Autopsy - Far From Heaven.mp3', art: '../assets/FFAA.jpg' },
+    { title: 'Valiant Hearts - No Place Like Home', src: '../assets/Valiant Hearts - No Place Like Home.mp3', art: '../assets/valiant.jpg' },
+    { title: 'Netherwalker - Thine King Weeps For Mercy', src: '../assets/Netherwalker - Thine King Weeps for Mercy.mp3', art: '../assets/netherwalker.jpg' },
+    { title: 'Worm Shepherd - Winter Sun', src: '../assets/Worm Shepherd - Winter Sun.mp3', art: '../assets/worm.png' },
 ];
 
 let currentTrackIndex = 0;
