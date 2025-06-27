@@ -36,6 +36,7 @@ slatonforged.dev/
 └── images/
     └── (anvil, background, icons, etc.)
 
+<<<<<<< HEAD
 
 ```
 
@@ -66,6 +67,17 @@ This site is hosted using [GitHub Pages](https://pages.github.com/). To deploy:
 - [x] Improve mobile performance and accessibility
 - [ ] Add LinkedIn and GitHub icon links
 - [ ] Expand project pages with languages and descriptions
+=======
+```
+
+## 📌 Todo / Wishlist
+
+- [ ] Add blog or devlog section
+- [ ] Integrate contact form backend (e.g., Netlify Forms or PHP mailer)
+- [ ] Improve mobile performance and accessibility
+- [ ] Add dark mode toggle
+- [ ] Expand project pages with tags and filters
+>>>>>>> ce3d0177839d7213b09319e45b7324db993ee148
 
 ## 🧙 Author
 
