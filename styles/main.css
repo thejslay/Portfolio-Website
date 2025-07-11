@@ -575,3 +575,26 @@ p {
     } 
 }
 
+.embed-container {
+  display: flex; /* Makes the div a flex container */
+  justify-content: center; /* Centers the embed horizontally */
+  align-items: center; /* Centers the embed vertically (if the container has a defined height) */
+  height: auto; /* Or set a fixed height if desired */
+  max-width: 100%; /* Ensures the container doesn't exceed the parent's width */
+  margin-inline: auto; /* Alternatively, you can use margin-left: auto; and margin-right: auto; */
+}
+
+/* Adjust embed size based on screen width using media queries */
+@media screen and (max-width: 768px) {
+  .embed-container embed {
+    width: 90vw; /* Sets width to 90% of the viewport width */
+    height: auto; /* Adjusts height proportionally */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .embed-container embed {
+    width: 95vw; /* Further adjustment for smaller screens */
+    height: auto;
+  }
+}

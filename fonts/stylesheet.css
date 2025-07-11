@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'HamletOrNot';
-    src: url('HamletOrNot.woff2') format('woff2'),
-        url('HamletOrNot.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-

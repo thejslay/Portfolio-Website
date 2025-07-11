@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Slaton, Jeremiah San Joaquin Valley Town Hall</title>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="styles/normalize.css" type="text/css">
+	<link rel="stylesheet" href="styles/main.css" type="text/css">
+    <link rel="stylesheet" href="styles/tickets.css" type="text/css">
+</head>
+
+<body>
+	<header>
+		<img src="images/town_hall_logo.gif" alt="Town Hall logo">
+		<h2>San Joaquin Valley Town Hall</h2>
+		<h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
+	</header>
+	<nav id="nav_menu">
+    	<ul>
+        	<li><a href="index.html">Home</a></li>
+        	<li><a href="speakers/sampson.html">Speakers</a></li>
+        	<li><a href="luncheons.html">Luncheons</a></li>
+        	<li><a href="tickets.html" class="current">Tickets</a></li>
+        	<li><a href="aboutus.html"> About Us</a>
+            	<ul>
+                	<li><a href="#">Our History</a></li>
+                	<li><a href="#">Board of Directors</a></li>
+                	<li><a href="#">Past Speakers</a></li>
+                	<li><a href="#">Contact Information</a></li>
+            	</ul>
+        	</li>
+    	</ul>
+	</nav>
+	<main>
+		<section>
+            <h1>Become a Member</h1>
+			<form action="register_account.html" method="get" id="registration_form">
+            <fieldset>
+                <legend>Registration Information</legend>
+                <label for="email">E-Mail:</label>
+                <input type="email" name="E-mail" id="email" autofocus required><br>
+                <label for="password">Password:</label>
+                <input type="password" name="Password" id="password" pattern="[a-zA-Z0-9]{6,}" title="Must be at least 6 alphanumeric characters" required><br>
+            </fieldset>
+            <fieldset>
+                <legend>Member Information</legend>
+                <label for="first_name">First Name:</label>
+                <input type="text" name="First Name" id="first_name" required><br>
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="Last Name" id="last_name" required><br>
+                <label for="state">State:</label>
+                <input type="text" name="State" id="state" required maxlength="2" placeholder="2-character code"><br>
+                <label for="zip">ZIP Code:</label>
+                <input type="text" name="ZIP Code" id="zip" required placeholder="5 digits" pattern="^\d{5}(-\d{4})?$" title="Either 5 digits"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Ticket Information</legend>
+                <label for="event_date">Event Date:</label>
+                <input type="date" name="Event Date" id="event_date" required><br>
+                <label for="ticket_amount">Tickets for Guests:</label>
+                <input type="number" name="Tickets for Guests" id="ticket_amount" min="1" max="4" value="2" required><br>
+            </fieldset>
+            <fieldset id="buttons">
+                <legend>Submit Your Information</legend>
+                <form action="register_account.html" method="GET">
+                    <input type="submit" name="Submit" id="submit" value="Submit" required><br>
+                </form>
+                <input type="reset" name="reset" id="reset" value="Reset Fields" required><br>
+            </fieldset>         
+		</section>
+		<aside>
+			<h2>Guest speakers</h2>
+			<h3>October<br><a href="speakers/toobin.html">Jeffrey Toobin</a></h3>
+			<img src="images/toobin75.jpg" alt="Jeffrey Toobin photo">
+			<h3>November<br><a href="speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
+			<img src="images/sorkin75.jpg" alt="Andrew Ross Sorkin photo">
+			<h3>January<br><a href="speakers/chua.html">Amy Chua</a></h3>
+			<img src="images/chua75.jpg" alt="Amy Chua photo">
+			<h3>February<br><a href="speakers/sampson.html">Scott Sampson</a></h3>
+			<a href="speakers/sampson.html"><img src="images/sampson75.jpg" alt="Scott Sampson photo"></a>
+		</aside>
+	</main>
+	<footer>
+		<p>&copy; 2018, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+	</footer>
+</body>
+</html>

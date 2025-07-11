@@ -1,0 +1,39 @@
+/*Register styles */
+
+a {
+	background-color: #931420;
+	border: 2px solid black;
+	padding: 6px;
+	color: white;
+	text-decoration: none;
+}
+a:visited {
+	color: white;
+}
+a:hover {
+	background-color: white;
+	color: #931420;
+}
+dl {
+	margin: 20px 10px;
+}
+dt {
+	font-weight: bold;
+	width:150px;
+	float:left;
+	clear:left;
+}
+dt::after {
+	content: ":";
+}
+dd {
+	text-indent: 10px;
+}
+.headingsFormat{
+	text-decoration:underline;
+	font-weight:bold;
+	font-variant:small-caps;
+}
+#content {
+	padding: 20px;
+}
