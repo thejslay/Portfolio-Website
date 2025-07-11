@@ -27,12 +27,27 @@ slatonforged.dev/
 ├── pages/
 │   ├── about.html
 │   ├── projects.html
-│   └── contact.html
+|       ├── biergarten
+|       ├── bootstrap example 1
+|       ├──
+|       ├──
+|       ├──
+|       ├──
+|       ├──
+|       ├──
+|       ├──
+|       └──
+│   ├── contact.html
+│   └── blog.html
 ├── styles/
 │   ├── main.css
 │   └── normalize.css
 ├── scripts/
 │   └── embers.js
+├── assets/
+│   └── (music, album artwork, music-player.js)
+├── downloads/
+│   └── (example downloads, resume, etc.)
 └── images/
     └── (anvil, background, icons, etc.)
 

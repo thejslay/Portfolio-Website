@@ -1,0 +1,77 @@
+/* Navigation Customization */
+.navbar-brand {
+    font-weight: bold;
+    color: #1c375a;
+}
+
+/* Home Page Jumbotron */
+.custom-jumbotron {
+    background: linear-gradient(135deg, #1c375a, #244066);
+    color: white;
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Cards */
+.card-custom {
+    border: 2px solid #6b8db0;
+    transition: transform 0.3s;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background-color: #4a6b8a;
+    color: white;
+    margin-top: 3rem;
+}
+
+/* Table */
+.table-custom {
+    background-color: #f8f9fa;
+}
+
+.table-custom th {
+    background-color: #4a6b8a;
+    color: white;
+}
+
+.membership-table {
+    background-color: #f8f9fa;
+}
+
+.membership-table th {
+    background-color: #4a6b8a;
+    color: white;
+}
+
+/* Form */
+.form-custom {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid #4a6b8a;
+}
+
+/* Button */
+.btn-custom {
+    background-color: #4a6b8a;
+    border-color: #4a6b8a;
+}
+
+.btn-custom:hover {
+    background-color: #6b8db0;
+    border-color: #6b8db0;
+}
+
+/* Contact Page Header */
+.contact-info {
+    background: linear-gradient(135deg, #1c375a, #244066);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}

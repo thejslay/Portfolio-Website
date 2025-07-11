@@ -1,0 +1,79 @@
+/* Custom CSS to override Bootstrap styles */
+
+/* Navigation Customization */
+.navbar-brand {
+    font-weight: bold;
+    color: #2d5a27 !important;
+}
+
+/* Home Page Jumbotron */
+.custom-jumbotron {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Card Styling */
+.card-custom {
+    border: 2px solid #4CAF50;
+    transition: transform 0.3s;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2d5a27;
+    color: white;
+    margin-top: 3rem;
+}
+
+/* Table Customization */
+.table-custom {
+    background-color: #f8f9fa;
+}
+
+.table-custom th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.membership-table {
+    background-color: #f8f9fa;
+}
+
+.membership-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Form Styling */
+.form-custom {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid #4CAF50;
+}
+
+/* Custom Button Styling */
+.btn-custom {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.btn-custom:hover {
+    background-color: #2E7D32;
+    border-color: #2E7D32;
+}
+
+/* Contact Page Header */
+.contact-info {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
