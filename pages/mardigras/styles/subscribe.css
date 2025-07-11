@@ -1,0 +1,39 @@
+/*Ch 13 subscribe styles */
+
+section a {
+	background-color: #D6AED2;
+	border: 2px solid black;
+	padding: 6px;
+	color: black;
+	text-decoration: none;
+}
+section a:visited {
+	color: black;
+}
+section a:hover {
+	background-color: white;
+	color: black;
+}
+dl {
+	margin: 20px 10px;
+}
+dt {
+	font-weight: bold;
+	width:200px;
+	float:left;
+	clear:left;
+}
+dt::after {
+	content: ":";
+}
+dd {
+	text-indent: 10px;
+}
+.headingsFormat{
+	text-decoration:underline;
+	font-weight:bold;
+	font-variant:small-caps;
+}
+#content {
+	padding: 20px;
+}

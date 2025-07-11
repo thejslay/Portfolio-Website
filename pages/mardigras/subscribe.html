@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Slaton Join Email Subscribe Results</title>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="styles/normalize.css" type="text/css">
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+     <link rel="stylesheet" href="styles/subscribe.css" type="text/css">
+   
+    <style>
+
+	</style>
+<script type="text/javascript">
+//<![CDATA[
+var decode = function ( text ) {
+    text = text.replace(/\+/g, " ");
+    text = text.replace(/%[a-fA-F0-9]{2}/g, 
+        function ( text ) {
+            return String.fromCharCode( "0x" + text.substr(1,2));
+        }
+    );
+    return text;
+}
+    
+var display_data = function () {
+    var query = location.search.replace("?", "");
+    if ( query == "" ) return;
+    
+    var fields = query.split("&");
+    
+    if ( fields.length == 0 ) {
+        document.write("<p>No data was submitted.</p>");
+    } else {
+        //document.write("<dl>");
+        var field_parts;
+        for ( var i in fields ) {
+            field_parts = fields[i].split("=");
+            field_parts[0] = decode( field_parts[0] );
+            field_parts[1] = decode( field_parts[1] );
+            document.write("<dt>" + field_parts[0] + "</dt>");
+            document.write("<dd>" + field_parts[1] + "</dd>");
+        }
+        //document.write("</dl>");
+    }
+}
+//]]>
+</script>
+</head>
+
+<body>
+
+  <header>
+  	<img src="images/MardiGrasLogo.png" alt="Mardi Gras Logo" >
+    <h2>Welcome party animals</h2>
+    <h3>Prepare to celebrate!</h3>
+  </header>
+  <nav id="nav_menu">
+  	<ul>
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="products/index.html">Product List</a></li>
+    	<li><a href="personal/index.html">Personal</a></li>
+    	<li><a href="decorating/index.html">Decorating Ideas</a>
+    		<ul>
+    			<li><a href="decorating/outdoor.html">Outdoor</a></li>
+    			<li><a href="decorating/indoor.html">Indoor</a></li>
+    			<li><a href="decorating/table.html">Table</a></li>
+    			<li><a href="decorating/Snacks.html">Snacks</a></li>
+    		</ul>
+    	</li>
+    	<li><a href="email.html">Join Email</a></li>
+	</ul>
+  </nav>
+  <main>
+	<aside>
+		<nav id="nav_list">
+   		<ul>
+                <li><a href="products/beads.html">Beads</a></li>
+                <li><a href="products/masks.html">Masks</a></li>
+                <li><a href="products/floats.html">Parade Floats</a></li>
+                <li><a href="products/props.html">Props</a></li>
+		</ul>
+		</nav>
+	</aside>
+    <section>
+      <div id="content">
+        <h1>Subscribe Successful</h1>
+        <p>Thank you for subscribing to our email list. Your account has been created with the following
+        information:</p>
+        <dl>
+            <dt class="headingsFormat">Item</dt>
+            <dd class="headingsFormat">Information Entered:</dd>
+            <script type="text/javascript">display_data();</script>
+        </dl>
+        <p>You will be hearing from me soon. In the meantime feel free to browse our Mardi Gras Store site.</p>
+        <p><a href="index.html">Return to Home Page</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+	<p>&copy; 2016 Ben Murach</p>
+  </footer>
+</body>
+</html>
